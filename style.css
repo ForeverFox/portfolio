@@ -77,6 +77,17 @@ p {
   width: 40px;
 }
 
+#aboutSM {
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+#aboutGit {
+  margin: 0;
+  padding-left: 0;
+}
+
 .footer, .footer-special {  
   width: 100%;
   height: 32px;
@@ -270,6 +281,18 @@ p {
   z-index: 9999;
 }
 
+#projectsNavWrapper {
+  width: 100%;
+  height: 125px;
+  position: fixed;
+  z-index: 9999;
+  background-color: white;
+}
+
+#portrait {
+  opacity: 0.2;
+}
+
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
@@ -279,7 +302,7 @@ p {
   #mainNav {
     display: none;
   }
-  
+
   .project-list {
     display: none;
   }
@@ -303,7 +326,6 @@ p {
     display: flex;
   }
 }
-
 
 /* Slider wrapper*/
 .css-slider-wrapper {
@@ -682,6 +704,11 @@ p {
     width: 320px;
     height: auto;
   }
+
+  #aboutSM li {
+  font-size: 1.25rem;
+  padding-top: 1.5rem;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -694,7 +721,13 @@ p {
   #heading {
     font-size: 40px;
   }
+}
 
+@media screen and (min-width: 1200px) {
+  #aboutSM li {
+  font-size: 2rem;
+  padding-top: 1.5rem;
+  }
 }
 
 @media screen and (min-width: 1366px) {
