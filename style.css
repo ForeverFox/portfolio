@@ -27,6 +27,10 @@ a {
   color: black;
 }
 
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
 
 .main {
   width: 100%;
@@ -37,11 +41,17 @@ a {
 .foreverfox {
   position: absolute;
   top: 33%;
-  font-size: 1.5rem;
-  line-height: 0.25rem;
-  font-weight: 900;
 }
 
+.foreverfox h2 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  line-height: 0.35;
+}
+
+#foreverfox p {
+  width: 100%;
+}
 
 .basic {
   text-align: right;
@@ -250,6 +260,14 @@ a {
   transition: margin-left .5s;
   padding: 10px;
   display: block;
+  width: 100%;
+}
+
+.mainbar {
+  position: fixed;
+  background-color: white;
+  height: 50px;
+  z-index: 9999;
 }
 
 @media screen and (max-height: 450px) {
@@ -261,11 +279,24 @@ a {
   #mainNav {
     display: none;
   }
+  
+  .project-list {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 768px) {
   #mobileNav, #main {
     display: none;
+  }
+
+  #projectsNav {
+  position: fixed;
+  z-index: 9999;
+  }  
+
+  .project-list {
+    display: block;
   }
 
   #mainNav {
@@ -296,9 +327,7 @@ a {
   position: relative;
   display: block;
   width: 100%;
-  min-height: 100%;
   margin: 0 auto;
-  padding-bottom: 160px;
 }
 
 @media screen and (min-width: 768px){
@@ -308,6 +337,10 @@ a {
     flex-flow: row; 
     padding-top: 200px;   
   }
+}
+
+.about-content p {
+  width: 80%;
 }
 
 .project-content, .about-content {

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Forever Fox Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111934023-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-111934023-1');
+    </script>   
+  </head>
+
+  <body>
+  <!-- Facebook Developer -->
+  <script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        appId      : '{2215813901769876}',
+        cookie     : true,
+        xfbml      : true,
+        version    : '{v.3.0}'
+      });
+        
+      FB.AppEvents.logPageView();   
+        
+    };
+
+    (function(d, s, id){
+       var js, fjs = d.getElementsByTagName(s)[0];
+       if (d.getElementById(id)) {return;}
+       js = d.createElement(s); js.id = id;
+       js.src = "https://connect.facebook.net/en_US/sdk.js";
+       fjs.parentNode.insertBefore(js, fjs);
+     }(document, 'script', 'facebook-jssdk'));
+  </script>   
+   
+    <!-- Navigation -->
+    <nav id="mainNav" class="navigation">
+      <div class="navigation-left">
+        <a href="projects.html">Projects</a>
+        <a href="about.html">About</a>
+        <a href="mailto:foreverfoxlove@gmail.com">Contact</a>
+      </div>
+      <figure class="logo">
+        <a href="index.html">
+          <img src="img/ff-logo-small.png" alt="Logo for Forever Fox Design">
+        </a>
+      </figure>
+    <!-- Social Media -->
+      <div class="navigation-right">
+        <ul class="social-media">
+          <li><a href="https://github.com/foreverfox" target="_blank"><i class="fab fa-github"></i></a></li>
+          <li><a href="https://www.facebook.com/AlexOgdenArt/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="https://twitter.com/foreverfoxlove" target="_blank"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="https://www.instagram.com/foreverfoxlove/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="https://soundcloud.com/user-827322490" target="_blank"><i class="fab fa-soundcloud"></i></a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Mobile Nav -->
+    <nav id="mobileNav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="projects.html">Projects</a>
+      <a href="about.html">About</a>
+      <a href="mailto:foreverfoxlove@gmail.com">Contact</a>
+      <ul class="social-media">
+        <li><a href="https://github.com/foreverfox" target="_blank"><i class="fab fa-github"></i></a></li>
+        <li><a href="https://www.facebook.com/AlexOgdenArt/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="https://twitter.com/foreverfoxlove" target="_blank"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="https://www.instagram.com/foreverfoxlove/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="https://soundcloud.com/user-827322490" target="_blank"><i class="fab fa-soundcloud"></i></a></li>
+      </ul>      
+    </nav>
+
+    <div id="main"><span style="font-size:30px; cursor:pointer; color:#6a6760" onclick="openNav()"><i class="fa fa-ellipsis-v"></i></span>
+      <header class="mobile-header">
+        <a href="index.html"><img src="img/ff-logo-small.png" alt="Logo for Forever Fox Design"></a>
+      </header>
+    </div>    
+
+    <!-- Slider Wrapper -->
+    <div class="css-slider-wrapper">
+
+      <input type="radio" name="slider" class="slide-radio1" checked id="slider_1">
+      <input type="radio" name="slider" class="slide-radio2" id="slider_2">
+      <input type="radio" name="slider" class="slide-radio3" id="slider_3">
+      <input type="radio" name="slider" class="slide-radio4" id="slider_4">
+
+      <!-- Slider Pagination -->
+      <div class="slider-pagination">
+        <label for="slider_1" class="page1"></label>
+        <label for="slider_2" class="page2"></label>
+        <label for="slider_3" class="page3"></label>
+        <label for="slider_4" class="page4"></label>    
+      </div>
+
+      <!-- Slider #1 -->
+      <div class="slider slide-1">  
+        <figure class="preview">
+          <a href="index.html"><img src="img/ff-logo-med.png" alt="Forever Fox Design logo"></a>
+        </figure>   
+        <article class="slider-content">
+          <h2 id="heading">forever fox</h2>
+        </article>
+      </div>
+
+      <!-- Slider #2 -->
+      <div class="slider slide-2">
+        <figure class="preview">
+          <img src="img/hero.png" alt="Gili Estlin Hirsch logo">
+        </figure>
+        <article class="slider-content">
+          <h4>Web Design</h4>
+          <h2>Gili Estlin Hirsch</h2>
+          <a class="view-btn" href="geh.html"></a>
+        </article>
+      </div>
+
+      <!-- Slider #3 -->
+      <div class="slider slide-3">
+        <figure class="preview">
+          <img src="img/typography.png" alt="Typography example">
+        </figure>  
+        <article class="slider-content">
+          <h4>Print Design</h4>
+          <h2>Climate Change Series</h2>
+          <a class="view-btn" href="climate.html"></a>          
+        </article>
+      </div>
+
+      <!-- Slider #4 -->
+      <div class="slider slide-4">
+        <figure class="preview">
+          <img src="img/anna.png" alt="Illustration example">
+        </figure>
+        <article class="slider-content">
+          <h4>Illustration</h4>
+          <h2>ANNA</h2>
+          <a class="view-btn" href="anna.html"></a>
+        </article>
+      </div>
+    </div>  <!-- .css-slider-wrapper -->
+      <footer class="footer">
+      <p>&copy; Alex Ogden</p>
+    </footer>
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery.magnific-popup-min.js"></script>      
+    <script src="js/slide.js"></script>
+    <script src="js/nav.js"></script>  
+    <script src="js/script.js"></script>
+  </body>
+
+</html>
