@@ -200,9 +200,19 @@ p {
   text-transform: uppercase;
 }
 
+.project-detail {
+  width: 300px;
+}
+
+.project-detail, .project-preview {
+  padding: 0 1rem;
+  margin: 0;
+}
+
 .project-preview {
-  width: 320px;
+  width: 300px;
   height: auto;
+  padding-bottom: 1rem;
 }
 
 .project-preview img {
@@ -430,7 +440,15 @@ p {
 .projects-gallery {
   position: relative;
   display: flex;
-  border: 1px solid red;
+}
+
+.flex {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .illustrations {

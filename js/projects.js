@@ -1,24 +1,27 @@
 $("document").ready(function() {    
   $("#web").click(function(){
-    $(".print, .illustration, .photography, .video, .audio").hide(); $(".web").show();
-  });  
+    $(".print, .illustration, .photography, .video, .audio, .ux").hide(); $(".web").show();
+  });
+  $("#ux").click(function(){
+    $(".web, .print, .illustration, .photography, .audio, .video").hide(); $(".ux").show();
+  });   
   $("#print").click(function(){
-    $(".web, .illustration, .photography, .video, .audio").hide(); $(".print").show();
+    $(".web, .illustration, .photography, .video, .audio, .ux").hide(); $(".print").show();
   });  
   $("#illustration").click(function(){
-   $(".web, .print, .photography, .video, .audio").hide(); $(".illustration").show();
+   $(".web, .print, .photography, .video, .audio, .ux").hide(); $(".illustration").show();
   });
   $("#photography").click(function(){
-   $(".web, .print, .illustration, .video, .audio").hide(); $(".photography").show();
+   $(".web, .print, .illustration, .video, .audio, .ux").hide(); $(".photography").show();
   });
   $("#video").click(function(){
-    $(".web, .print, .illustration, .photography, .audio").hide(); $(".video").show();
+    $(".web, .print, .illustration, .photography, .audio, .ux").hide(); $(".video").show();
   }); 
   $("#audio").click(function(){
-    $(".web, .print, .illustration, .photography, .video").hide(); $(".audio").show();
+    $(".web, .print, .illustration, .photography, .video, .ux").hide(); $(".audio").show();
   });  
 
   $("#showAll").click(function(){
-   $(".web, .print, .illustration, .photography, .video, .audio").show();
+   $(".web, .print, .illustration, .photography, .video, .audio, .ux").show();
   }); 
 });
