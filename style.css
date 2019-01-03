@@ -23,13 +23,13 @@ body {
   overscroll-behavior: none; /* Prevents scroll bounce with fixed elements */
 }
 
-a {
-  color: black;
-}
-
 p {
   font-size: 1rem;
   line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
 }
 
 .main {
@@ -148,7 +148,7 @@ p {
 
 .navigation-left a:hover,
 .navigation-left a:focus {
-  border-color: #9556a1;
+  border-color: #6cd8df;
   background-color: rgba(44, 45, 47, 0);
 }
 
@@ -184,8 +184,8 @@ p {
   color: #6a6760;
 }
 
-.social-media li a:hover , .project-content a:hover {
-  color: #9556a1;
+.social-media li a:hover , .project-content a:hover, #projectsNav a:hover, .about-content a:hover {
+  color: #6cd8df;
 }
 
 .project-list {
@@ -225,15 +225,9 @@ p {
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1620px) {
   .project-preview {
     width: 640px;
-  }
-}
-
-@media screen and (min-width: 1366px) {
-  .project-preview {
-    width: 960px;
   }
 }
 
@@ -297,10 +291,6 @@ p {
   position: fixed;
   z-index: 9999;
   background-color: white;
-}
-
-#portrait {
-  opacity: 0.2;
 }
 
 @media screen and (max-height: 450px) {
@@ -386,6 +376,18 @@ p {
   text-align: left;
 }
 
+.project-content a, .about-content a {
+  color: #71df6c;
+}
+
+.project-content li a {
+  color: black;
+}
+
+.project-content a:hover {
+  color: #6cd8df;
+}
+
 @media screen and (min-width: 768px) {
   .project-content, .about-content {
     width: 50%;
@@ -409,11 +411,6 @@ p {
   margin: 0 auto;
 }
 
-.project-content a {
-  color: black;
-  text-decoration: none;
-}
-
 .section-title {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 60px;
@@ -433,7 +430,7 @@ p {
   position: fixed;
 }
 
-.origami {
+.origami, #portrait {
   width: 320px;
 }
 
@@ -457,7 +454,7 @@ p {
 }
 
 @media screen and (min-width: 1024px) {
-  .origami {
+  .origami, #portrait {
     width: 480px;
   }
 }
