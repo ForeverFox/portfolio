@@ -88,6 +88,11 @@ a {
   padding-left: 0;
 }
 
+.uppercase {
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+
 .footer, .footer-special {  
   width: 100%;
   height: 32px;
@@ -393,7 +398,7 @@ a {
   text-align: left;
 }
 
-.project-content a, .about-content a {
+.project-content a, .about-content a, .project-detail a {
   color: #71df6c;
 }
 
@@ -401,7 +406,7 @@ a {
   color: black;
 }
 
-.project-content a:hover {
+.project-content a:hover, .project-detail a:hover {
   color: #6cd8df;
 }
 
