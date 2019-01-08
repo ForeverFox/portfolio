@@ -218,6 +218,8 @@ a {
   width: 300px;
   height: auto;
   padding-bottom: 1rem;
+  box-shadow: 1px 1px 6px 1px #dcdcdc;
+  margin: 0.5rem;
 }
 
 .project-preview img {
