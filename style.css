@@ -80,26 +80,40 @@ figcaption p {
 .main-page, .about-page {
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
 }
 
 .main-page {
   background-image: url(img/bg-main-mobile.png);
+  height: 70vh;
 }
 
 .about-page {
   background-image: url(img/bg-about-mobile.png);
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1366px) {
   .main-page {
     background-image: url(img/bg-main.png);
+    background-position: center;
+    background-size: cover;
   }
 
   .about-page {
-    background-image: url(img/bg-about.png); 
+    background-image: url(img/bg-about-alt.png); 
   }
 
+}
+
+@media screen and (min-width: 768px) {
+  .main-page, .about-page {
+    height: 100vh;
+  }
+
+  .main-page {
+    background-image: url(img/bg-main.png);
+    background-position: center bottom;
+    background-size: contain;
+  }
 }
 
 .main-image {
