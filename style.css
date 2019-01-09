@@ -35,6 +35,7 @@ a {
 figcaption p {
   font-size: 0.75rem;
   font-weight: 600;
+  padding: 1rem 0 0 0;
 }
 
 .main {
@@ -46,8 +47,8 @@ figcaption p {
 .foreverfox {
   position: absolute;
   width: 100%;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 45%;
+  transform: translateY(-45%);
   padding-left: 50px;
 }
 
@@ -92,7 +93,7 @@ figcaption p {
 
 @media screen and (min-width: 1200px) {
   .main-page {
-    background-image: url(img/bg-fox.png);
+    background-image: url(img/bg-main.png);
   }
 
   .about-page {
@@ -137,6 +138,7 @@ figcaption p {
 .uppercase {
   text-transform: uppercase;
   font-size: 0.85rem;
+  padding: 0;
 }
 
 .footer, .footer-special {  
@@ -252,11 +254,10 @@ figcaption p {
 
 .project-detail {
   width: 60%;
-  float: right;
-  text-align: right;
+  padding-bottom: 1rem;
 }
 
-.project-detail, .project-preview {
+.project-preview {
   padding: 0 1rem;
   margin: 0;
 }
