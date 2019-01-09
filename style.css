@@ -40,13 +40,14 @@ a {
 
 .foreverfox {
   position: absolute;
-  top: 33%;
+  top: 25%;
 }
 
 .foreverfox h2 {
-  font-size: 2.5rem;
-  font-weight: 900;
-  line-height: 0.35;
+  font-size: 4rem;
+  line-height: 0.25;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
 }
 
 #foreverfox p {
@@ -124,37 +125,26 @@ a {
   position: absolute;
   width: 100%;
   height: 100px;
-  padding: 0 100px;
+  padding: 0 50px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   z-index: 1;
 }
 
-.navigation-left {
-  margin-left: -33px;
-}
-
 .navigation-left a {
   text-decoration: none;
   text-transform: uppercase;
-  color: #6a6760;
+  color: #71df6c;
   font-size: 12px;
   font-weight: bold;
-  width: 107px;
-  height: 30px;
-  border: 2px solid transparent;
-  border-radius: 15px;
-  display: inline-block;
-  text-align: center;
-  line-height: 25px;
+  display: inline;
+  padding-right: 1rem;
   transition: all .2s;
 }
 
-.navigation-left a:hover,
-.navigation-left a:focus {
-  border-color: #6cd8df;
-  background-color: rgba(44, 45, 47, 0);
+.navigation-left a:hover {
+  color: #6cd8df;
 }
 
 .logo {
@@ -173,6 +163,7 @@ a {
 .navigation-right {
   display: flex;
   align-items: center;
+  margin: 0;
 }
 
 .social-media {
@@ -393,7 +384,7 @@ a {
   position: relative;
   width: 100%;
   margin: 0; 
-  padding: 25px;
+  padding: 0 50px;
 }
 
 .project-content h2, .project-content p, .about-content h2, .about-content p {
@@ -444,7 +435,7 @@ a {
 
 .section-title {
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 60px;
+  font-size: 3rem;
   font-weight: 300;
   line-height: 1.1;  
   color: #333333;
