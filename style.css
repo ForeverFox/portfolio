@@ -84,6 +84,7 @@ figcaption p {
 
 .main-page {
   background-image: url(img/bg-main-mobile.png);
+  height: 100vh;
 }
 
 .about-page {
