@@ -70,18 +70,30 @@ a {
   text-align: center;
 }
 
-.main-page {
-  height: 100vh;
-  background-image: url(img/bg-fox.png);
+
+.main-page, .about-page {
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100vh;
+}
+
+.main-page {
+  background-image: url(img/bg-main-mobile.png);
 }
 
 .about-page {
-  height: 100vh;
-  background-image: url(img/bg-about.png);
-  background-repeat: no-repeat;
-  background-size: cover; 
+  background-image: url(img/bg-about-mobile.png);
+}
+
+@media screen and (min-width: 1200px) {
+  .main-page {
+    background-image: url(img/bg-fox.png);
+  }
+
+  .about-page {
+    background-image: url(img/bg-about.png); 
+  }
+
 }
 
 .main-image {
@@ -234,7 +246,9 @@ a {
 }
 
 .project-detail {
-  width: 300px;
+  width: 50%;
+  float: right;
+  text-align: right;
 }
 
 .project-detail, .project-preview {
@@ -262,7 +276,7 @@ a {
 
 @media screen and (min-width: 1620px) {
   .project-preview {
-    width: 640px;
+    width: 960px;
   }
 }
 
@@ -437,7 +451,7 @@ a {
 
 @media screen and (min-width: 768px) {
   .about-content {
-    width: 50%;  
+    width: 40%;  
   }
 }
 
@@ -447,11 +461,7 @@ a {
   }  
 }
 
-@media screen and (min-width: 1024px) {
-  .about-content {
-    width: 33%;
-  }
-}
+
 
 .about-content img {
   max-width: 100%;
@@ -493,7 +503,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .illustrations {
