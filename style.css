@@ -382,8 +382,9 @@ a {
   }
 }
 
-.about-content p {
+.about-content p, .project-content p {
   width: 80%;
+  padding: 1rem 0;
 }
 
 .project-content, .about-content {
@@ -445,7 +446,7 @@ a {
   font-size: 2.75rem;
   font-weight: 300;
   line-height: 1.1;  
-  color: #333333;
+  color: #76008d;
 }
 
 .project-type {
