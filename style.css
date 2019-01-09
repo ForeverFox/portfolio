@@ -32,6 +32,11 @@ a {
   text-decoration: none;
 }
 
+figcaption p {
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
 .main {
   width: 100%;
   height: 100%;
@@ -261,7 +266,7 @@ a {
   height: auto;
   padding-bottom: 1rem;
   box-shadow: 1px 1px 6px 1px #dcdcdc;
-  margin: 0.5rem;
+  margin: 1rem;
 }
 
 .project-preview img {
@@ -274,9 +279,15 @@ a {
   }
 }
 
-@media screen and (min-width: 1620px) {
+@media screen and (min-width: 1680px) {
   .project-preview {
-    width: 960px;
+    width: 640px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .project-preview {
+    width: 1200px;
   }
 }
 
@@ -430,7 +441,7 @@ a {
   text-align: left;
 }
 
-.project-content a, .about-content a, .project-detail a {
+.project-content a, .about-content a, .project-detail a, .totop a {
   color: #71df6c;
 }
 
@@ -438,7 +449,7 @@ a {
   color: black;
 }
 
-.project-content a:hover, .project-detail a:hover {
+.project-content a:hover, .project-detail a:hover, .totop a:hover {
   color: #6cd8df;
 }
 
