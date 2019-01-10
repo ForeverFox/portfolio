@@ -79,29 +79,23 @@ figcaption p {
 
 .main-page, .about-page {
   background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .main-page {
-  background-image: url(img/bg-main-mobile.png);
+  background-image: url(img/bg-main.png);
+  background-size: contain;
   height: 100vh;
 }
 
 .about-page {
-  background-image: url(img/bg-about-mobile.png);
+  height: 100vh;
 }
 
 @media screen and (min-width: 1366px) {
   .main-page {
-    background-image: url(img/bg-main.png);
     background-position: center;
     background-size: cover;
   }
-
-  .about-page {
-    background-image: url(img/bg-about-alt.png); 
-  }
-
 }
 
 @media screen and (min-width: 768px) {
@@ -431,7 +425,14 @@ figcaption p {
   padding: 0.5rem;
 }
 
-@media screen and (min-width: 768px){
+#chameleon {
+  position: fixed;
+  top: 60%;
+  left: -20%;
+  transform: translate(-20%, -60%);
+}
+
+@media screen and (min-width: 768px) {
   .project-section, .main-page, .about-page {
     display: flex;
     flex-wrap: wrap;
@@ -441,15 +442,33 @@ figcaption p {
 }
 
 .about-content p, .project-content p {
-  width: 80%;
-  padding: 1rem 0;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .about-content p, .project-content p {
+    width: 60%;
+    padding: 1rem 0;
+  }
 }
 
 .project-content, .about-content {
   position: relative;
   width: 100%;
   margin: 0; 
-  padding: 0 50px;
+  padding: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .project-content {
+    padding: 0 50px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about-content {
+    padding-left: 50px;
+  }
 }
 
 .project-content h2, .project-content p, .about-content h2, .about-content p {
@@ -475,19 +494,13 @@ figcaption p {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .about-content {
-    width: 40%;  
-  }
-}
+
 
 @media screen and (min-width: 1024px) {
   .project-content {
     width: 25%;
   }  
 }
-
-
 
 .about-content img {
   max-width: 100%;
@@ -518,6 +531,10 @@ figcaption p {
   width: 320px;
 }
 
+.origami img {
+  max-width: 100%;
+}
+
 .projects-gallery {
   position: relative;
   display: flex;
@@ -545,7 +562,13 @@ figcaption p {
 
 @media screen and (min-width: 1366px) {
   .origami {
-    width: 768px;
+    width: 640px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .about-page {
+    overflow: hidden;
   }
 }
 
@@ -573,25 +596,21 @@ figcaption p {
   .gallery-wrapper {
     width: 80%;
   }
-
-  .about-wrapper {
-    width: 66%;
-  }
 }
 
 .gallery-items {
   position: relative;
-  width: 320px;
-  height: 320px;
+  width: 300px;
+  height: 300px;
   margin: 0.5rem;
   box-shadow: 1px 1px 6px 1px #dcdcdc; 
 }
 
-.gallery-images {
+.gallery-items {
   display: block;
 }
 
-.gallery-images img {
+.gallery-items img {
   max-width: 100%;
 }
 
