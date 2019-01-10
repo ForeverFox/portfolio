@@ -1,4 +1,13 @@
 $(document).ready(function() {
+	var isFF = 'MozAppearance' in document.documentElement.style;
+
+	function firefox() {
+		if (isFF) {
+			$("#chameleon").removeClass("animated slideInLeft");
+			$("#chameleon").addClass("chameleonPositionFF");
+		}
+	}
+
 	$('.popup-gallery').magnificPopup({
 		delegate: 'a',
 		type: 'image',
@@ -16,4 +25,13 @@ $(document).ready(function() {
 			}
 		}
 	});
+
+	$("#fox").addClass("animated slideInUp");
+
+	$("#chameleon").addClass("animated slideInLeft");
+
+	setTimeout(function() {
+		$("#prestoFox").attr("src", "img/fox-hi.png");
+	}, 2000);
 });
+
