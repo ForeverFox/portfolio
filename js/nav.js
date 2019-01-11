@@ -1,11 +1,9 @@
-function openNav() {
-    document.getElementById("mobileNav").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
-    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-}
+$(document).ready(function() {
+	$("#mobileNavOpen").click(function() {
+		$("#mobileNav").css("left", "0");
+	});
 
-function closeNav() {
-    document.getElementById("mobileNav").style.width = "0";
-    document.getElementById("main").style.marginLeft = "0";
-    document.body.style.backgroundColor = "white";
-}
+	$("#mobileNavClose").click(function() {
+		$("#mobileNav").css("left", "-100%");
+	});
+});

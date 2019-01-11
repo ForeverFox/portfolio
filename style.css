@@ -21,6 +21,7 @@ body {
   font-family: "Roboto", sans-serif;
   color: #111111;
   overscroll-behavior: none;
+  background-color: white;
 }
 
 p {
@@ -38,6 +39,14 @@ figcaption p {
   padding: 1rem 0 0 0;
 }
 
+.center {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
 .main {
   width: 100%;
   height: 100%;
@@ -47,8 +56,8 @@ figcaption p {
 .foreverfox {
   position: absolute;
   width: 100%;
-  top: 45%;
-  transform: translateY(-45%);
+  top: 25%;
+  transform: translateY(-25%);
   padding-left: 50px;
 }
 
@@ -67,6 +76,12 @@ figcaption p {
   width: 100%;
 }
 
+@media screen and (min-width: 768px) {
+  .foreverfox {
+    top: 45%;
+    transform: translateY(-45%);
+  }
+}
 .basic {
   text-align: right;
   padding: 12px 0 0 0;
@@ -80,19 +95,56 @@ figcaption p {
   text-align: center;
 }
 
+#fox {
+  width: 300px;
+}
+
+@media screen and (min-width: 1024px) {
+  #fox {
+    width: 420px;
+  }
+}
+
+@media screen and (min-width: 1680px) {
+  #fox {
+    width: 580px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  #fox {
+    width: 640px;
+  }
+}
 
 .main-page, .about-page {
   background-repeat: no-repeat;
 }
 
 .main-page {
-  background-image: url(img/bg-main.png);
+  background-image: url(img/bg-main-mobile.png);
   background-size: contain;
   height: 100vh;
 }
 
 .about-page {
   height: 100vh;
+}
+
+.about-logo {
+  width: 300px;
+  margin: 0;
+  padding-top: 4rem;
+}
+
+.about-logo img {
+  max-width: 100%;
+}
+
+@media screen and (min-width: 1680px) {
+  .about-logo {
+    width: 480px;
+  }
 }
 
 @media screen and (min-width: 1366px) {
@@ -102,7 +154,7 @@ figcaption p {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .main-page, .about-page {
     height: 100vh;
   }
@@ -126,14 +178,28 @@ figcaption p {
 
 .mobile-header {
   height: 50px;
-  position: absolute;
+  position: fixed;
   top: 8px;
   left:50%;
   transform: translateX(-50%);
+  z-index: 1000;
+  display: block;
 }
 
 .mobile-header img {
-  width: 40px;
+  width: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-header img {
+    width: 100px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .mobile-header {
+    display: none;
+  }
 }
 
 #aboutSM {
@@ -236,12 +302,22 @@ figcaption p {
 
 .social-media {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .social-media li {
-  display: inline-block;
-  padding: 0.5rem;  
+  display: block;
+  padding: 0;  
   font-size: 1.2rem;
+}  
+
+@media screen and (min-width: 1024px) {
+  .social-media li {
+    display: inline-block;
+    padding: 0.5rem;  
+    font-size: 1.2rem;
+  }  
 }
 
 .social-media li a {
@@ -255,6 +331,7 @@ figcaption p {
 .project-list {
   list-style-type: none;
   padding: 0;
+  display: none;
 }
 
 .project-list li {
@@ -307,15 +384,16 @@ figcaption p {
 /* Mobile Nav */
 .sidenav {
   height: 100%;
-  width: 0;
+  width: 75%;
   position: fixed;
-  z-index: 1;
+  z-index: 1000000;
   top: 0;
-  left: 0;
-  background-color: #111;
+  left: -100%;
+  background-color: white;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
+  box-shadow: 0 1rem 1rem 5px #dcdcdc;
 }
 
 .sidenav a {
@@ -341,31 +419,44 @@ figcaption p {
 
 #mobileNav {
   display: block;
-  z-index: 100000;
+}
+
+#mobileNavOpen {
+  color: #877d78;
+  font-size: 2rem;
 }
 
 #main {
-  transition: margin-left .5s;
+  position: fixed;
   padding: 10px;
   display: block;
   width: 100%;
+  height: 100px;
+  z-index: 1000;
+  background-color: white;
 }
 
 .mainbar {
   position: fixed;
   background-color: white;
-  height: 50px;
+  height: 80px;
   z-index: 11000;
 }
 
+@media screen and (min-width: 768px) {
+  .mobile-header {
+    height: 100px;
+  }
+}
+
 #projectsNav {
-  position: fixed;
-  z-index: 9999;
+  position: relative;
 } 
 
-@media screen and (max-height: 1023px) {
+@media screen and (min-width: 768px) {
   #projectsNav {
-    position: relative;
+    position: fixed;
+    z-index: 9999;
   }
 }
 
@@ -379,12 +470,12 @@ figcaption p {
   position: fixed;
   z-index: 9999;
   background-color: white;
-  display: block;
+  display: none;
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (min-width: 1024px) {
   #projectsNavWrapper {
-    display: none;
+    display: block;
   }
 }
 
@@ -393,17 +484,17 @@ figcaption p {
   .sidenav a {font-size: 18px;}
 }
 
-@media screen and (max-width: 767px) {
-  #mainNav {
-    display: none;
-  }
-
+@media screen and (min-width: 768px) {
   .project-list {
-    display: none;
+    display: block;
   }
 }
 
-@media screen and (min-width: 768px) {
+#mainNav {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
   #mobileNav, #main {
     display: none;
   } 
@@ -425,15 +516,70 @@ figcaption p {
   padding-top: 50px;
 }
 
+@media screen and (min-width: 768px) {
+  .main-page {
+    margin-top: 0;
+  }
+}
+
 .about-content img {
   padding: 0.5rem;
 }
 
 #chameleon {
-  position: fixed;
-  top: 60%;
-  left: -20%;
-  transform: translate(-20%, -60%);
+  display: none;
+}
+
+#chameleon img {
+  max-width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  #chameleon {
+    display: block;
+    position: fixed;
+    width: 360px;
+    top: 60%;
+    left: -30%;
+    transform: translate(30%, -60%);  
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #chameleon {
+    width: 480px;
+    top: 70%;
+    left: -20%;
+    transform: translate(20%, -70%);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  #chameleon {
+    width: 400px;
+    top: 70%;
+    left: -17%;
+    transform: translate(17%, -70%);
+  }
+}
+
+@media screen and (min-width: 1680px) {
+  #chameleon {
+    width: 360px;
+    top: 70%;
+    left: -1%;
+    transform: translate(1%, -70%);
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  #chameleon {
+    width: 480px;
+    position: fixed;
+    top: 60%;
+    left: -10%;
+    transform: translate(10%, -60%);
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -451,8 +597,14 @@ figcaption p {
 
 @media screen and (min-width: 768px) {
   .about-content p, .project-content p {
-    width: 60%;
+    width: 100%;
     padding: 1rem 0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .about-content {
+    width: 50% !important;
   }
 }
 
@@ -497,8 +649,6 @@ figcaption p {
     width: 40%;
   }
 }
-
-
 
 @media screen and (min-width: 1024px) {
   .project-content {

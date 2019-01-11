@@ -1,13 +1,4 @@
 $(document).ready(function() {
-	var isFF = 'MozAppearance' in document.documentElement.style;
-
-	function firefox() {
-		if (isFF) {
-			$("#chameleon").removeClass("animated slideInLeft");
-			$("#chameleon").addClass("chameleonPositionFF");
-		}
-	}
-
 	$('.popup-gallery').magnificPopup({
 		delegate: 'a',
 		type: 'image',

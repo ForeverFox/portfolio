@@ -43,9 +43,9 @@
       </div>
     </nav>
 
-    <!-- Mobile Nav -->
+    <!-- Mobile Nav -->  
     <nav id="mobileNav" class="sidenav">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="javascript:void(0)" id="mobileNavClose" class="closebtn">&times;</a>
       <a href="projects.html">Projects</a>
       <a href="about.html">About</a>
       <a href="mailto:foreverfoxlove@gmail.com">Contact</a>
@@ -58,11 +58,15 @@
       </ul>      
     </nav>
 
-    <div id="main"><span style="font-size:30px; cursor:pointer; color:#6a6760" onclick="openNav()"><i class="fa fa-ellipsis-v"></i></span>
-      <header class="mobile-header">
-        <a href="index.html"><img src="img/ff-logo-small.png" alt="Logo for Forever Fox Design"></a>
-      </header>
-    </div>  
+    <div id="main">
+      <a href="javascript:void(0)">
+        <i id="mobileNavOpen" class="fa fa-ellipsis-v"></i>
+      </a>
+    </div>
+
+    <header class="mobile-header">
+      <a href="index.html"><img src="img/ff-logo-small.png" alt="Logo for Forever Fox Design"></a>
+    </header>
 
     <section class="main-page">
       <div id="foreverfox" class="foreverfox">

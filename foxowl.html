@@ -20,7 +20,6 @@
 
   <body>
     <!-- Navigation -->
-    <div id="projectsNavWrapper">
     <nav id="mainNav" class="navigation">
       <div class="navigation-left">
         <a href="projects.html">Projects</a>
@@ -32,7 +31,7 @@
           <img src="img/ff-logo-small.png" alt="Logo for Forever Fox Design">
         </a>
       </figure>
-    <!-- Social Media -->
+<!-- Social Media -->
       <div class="navigation-right">
         <ul class="social-media">
           <li><a href="https://github.com/foreverfox" target="_blank"><i class="fab fa-github"></i></a></li>
@@ -43,11 +42,10 @@
         </ul>
       </div>
     </nav>
-  </div>
 
-    <!-- Mobile Nav -->
+    <!-- Mobile Nav -->  
     <nav id="mobileNav" class="sidenav">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="javascript:void(0)" id="mobileNavClose" class="closebtn">&times;</a>
       <a href="projects.html">Projects</a>
       <a href="about.html">About</a>
       <a href="mailto:foreverfoxlove@gmail.com">Contact</a>
@@ -60,11 +58,15 @@
       </ul>      
     </nav>
 
-    <div class="mainbar" id="main"><span style="font-size:30px; cursor:pointer; color:#6a6760" onclick="openNav()"><i class="fa fa-ellipsis-v"></i></span>
-      <header class="mobile-header">
-        <a href="index.html"><img src="img/ff-logo-small.png" alt="Logo for Forever Fox Design"></a>
-      </header>
-    </div>              
+    <div id="main">
+      <a href="javascript:void(0)">
+        <i id="mobileNavOpen" class="fa fa-ellipsis-v"></i>
+      </a>
+    </div>
+
+    <header class="mobile-header">
+      <a href="index.html"><img src="img/ff-logo-small.png" alt="Logo for Forever Fox Design"></a>
+    </header>              
 
     <section id="top" class="project-section">
       <aside id="projectsNav" class="project-content">
