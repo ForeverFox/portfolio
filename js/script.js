@@ -22,15 +22,7 @@ $(document).ready(function() {
 	$("#chameleon").addClass("animated slideInLeft");
 
 	setTimeout(function() {
-		$("#prestoFox").attr("src", "img/fox-hi.png");
-	}, 2000);
-
-	setTimeout(function() {
-		$("#prestoFox").attr("src", "img/fox.png");
-	}, 3000);
-
-	setTimeout(function() {
 		$("#prestoFox").attr("src", "img/fox-hi-word.png");
-	}, 4500);
+	}, 3000);
 });
 
