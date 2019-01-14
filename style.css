@@ -53,6 +53,14 @@ figcaption p {
   overflow-x: auto;
 }
 
+.tech {
+  font-weight: 600;
+}
+
+.tech-list {
+  list-style-type: square;
+}
+
 .foreverfox {
   position: absolute;
   width: 100%;
