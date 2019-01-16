@@ -91,13 +91,10 @@
 	min-height: 480px;
 	z-index: 9999;
 	background-color: #FFF;
-}
-
-.loading-wrapper {
 	background-image: url("img/loading.gif");
 	background-repeat: no-repeat;
 	background-position: center center;
-	background-size: 60%;
+	background-size: 80%;
 }
 
 .loading-wrapper img {
