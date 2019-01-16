@@ -152,8 +152,8 @@ figcaption p {
 }
 
 .about-logo {
-  width: 300px;
-  margin: 0;
+  width: 250px;
+  margin: 0 auto;
   padding-top: 4rem;
 }
 
