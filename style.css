@@ -130,8 +130,9 @@ figcaption p {
 }
 
 .main-page {
-  background-image: url(img/bg-main-mobile.png);
+  background-image: url(img/bg-main-mobile.jpg);
   background-size: contain;
+  background-position: center bottom;
   height: 100vh;
 }
 
@@ -169,7 +170,7 @@ figcaption p {
   }
 
   .main-page {
-    background-image: url(img/bg-main.png);
+    background-image: url(img/bg-main.jpg);
     background-position: center bottom;
     background-size: contain;
   }
@@ -378,9 +379,15 @@ figcaption p {
   }
 }
 
-@media screen and (min-width: 1680px) {
+@media screen and (min-width: 1366px) {
   .project-preview {
     width: 640px;
+  }
+}
+
+@media screen and (min-width: 1680px) {
+  .project-preview {
+    width: 800px;
   }
 }
 
