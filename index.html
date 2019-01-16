@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Forever Fox Design</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="preload.css">
     <link rel="stylesheet" href="animate.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -19,7 +20,14 @@
   </head>
 
   <body>
-    <!-- Navigation -->
+<!-- Preloader -->    
+    <div id="preload-images"></div>
+    <div id="preloader">
+    <figure class="loading-wrapper">
+      <img src="img/loading.gif" alt="loading gif">
+    </figure>     
+    </div>
+<!-- Navigation -->
     <nav id="mainNav" class="navigation">
       <div class="navigation-left">
         <a href="projects.html">Projects</a>
@@ -82,8 +90,9 @@
     </footer>
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="js/jquery.magnific-popup-min.js"></script>    
-    <script src="js/slide.js"></script>
+    <script src="js/jquery.magnific-popup-min.js"></script>
+    <script src="js/jquery.waitforimages.js"></script>
+    <script src="js/script.js"></script>
     <script src="js/nav.js"></script>    
     <script src="js/script.js"></script>      
   

@@ -1,0 +1,110 @@
+/* Image Preloading for Home Page */
+#preload-images {
+	background: url(img/preload-bg.jpg) no-repeat -9999px -9999px;
+	background: url(img/preload-bg.jpg) no-repeat -9999px -9999px,
+	    url(img/anna.jpg) no-repeat -9999px -9999px,	
+	    url(img/anna-acid.jpg) no-repeat -9999px -9999px,	
+	    url(img/anna-axis.jpg) no-repeat -9999px -9999px,
+	    url(img/anna-center.jpg) no-repeat -9999px -9999px,   
+	    url(img/anna-cruxifiction.jpg) no-repeat -9999px -9999px, 
+	    url(img/anna-micah.jpg) no-repeat -9999px -9999px,	
+	    url(img/anna-petrichor.jpg) no-repeat -9999px -9999px,    
+	    url(img/anna-song.jpg) no-repeat -9999px -9999px,
+	    url(img/anna-thumb.jpg) no-repeat -9999px -9999px,
+	    url(img/anna-why.jpg) no-repeat -9999px -9999px,
+	    url(img/anna-wilhelm-tell.jpg) no-repeat -9999px -9999px,
+	    url(img/anna-you.jpg) no-repeat -9999px -9999px,
+	    url(img/ao-about.jpg) no-repeat -9999px -9999px,
+	    url(img/ao-connect.jpg) no-repeat -9999px -9999px,
+	    url(img/ao-home.jpg) no-repeat -9999px -9999px,
+	    url(img/ao-tablet-mobile.jpg) no-repeat -9999px -9999px,
+	    url(img/ao-thumb.png) no-repeat -9999px -9999px,
+	    url(img/ao-works.jpg) no-repeat -9999px -9999px,
+	    url(img/bg-main.jpg) no-repeat -9999px -9999px,
+	    url(img/bg-main-mobile.jpg) no-repeat -9999px -9999px,
+	    url(img/bow-00.jpg) no-repeat -9999px -9999px,
+	    url(img/bow-01.jpg) no-repeat -9999px -9999px,
+	    url(img/bow-02.jpg) no-repeat -9999px -9999px,
+	    url(img/bow-03.jpg) no-repeat -9999px -9999px,
+	    url(img/bow-04.jpg) no-repeat -9999px -9999px,
+	    url(img/bow-05.jpg) no-repeat -9999px -9999px,
+	    url(img/bow-06.jpg) no-repeat -9999px -9999px,
+	    url(img/bow-thumb.jpg) no-repeat -9999px -9999px,
+	    url(img/bow-web.jpg) no-repeat -9999px -9999px,
+	    url(img/color-thumb.jpg) no-repeat -9999px -9999px,
+	    url(img/demo-thumb.jpg) no-repeat -9999px -9999px,
+	    url(img/fando-thumb.png) no-repeat -9999px -9999px,
+	    url(img/ff-logo-small.png) no-repeat -9999px -9999px,
+	    url(img/fox.jpg) no-repeat -9999px -9999px,
+	    url(img/fox-hi-word.jpg) no-repeat -9999px -9999px,
+	    url(img/foxowl-old-about.jpg) no-repeat -9999px -9999px,
+	    url(img/foxowl-old-authors.jpg) no-repeat -9999px -9999px,
+	    url(img/foxowl-old-contact.jpg) no-repeat -9999px -9999px,
+	    url(img/foxowl-old-home.jpg) no-repeat -9999px -9999px,
+	    url(img/foxowl-old-projects.jpg) no-repeat -9999px -9999px,
+	    url(img/foxowl-old-sub.jpg) no-repeat -9999px -9999px,
+	    url(img/geh-comparison-about.jpg) no-repeat -9999px -9999px,
+	    url(img/geh-comparison-home.jpg) no-repeat -9999px -9999px,
+	    url(img/geh-comparison-poems.jpg) no-repeat -9999px -9999px,
+	    url(img/geh-main.jpg) no-repeat -9999px -9999px,
+	    url(img/geh-moodboard.jpg) no-repeat -9999px -9999px,
+	    url(img/geh-original-large.jpg) no-repeat -9999px -9999px,
+	    url(img/geh-thumb.jpg) no-repeat -9999px -9999px,
+	    url(img/ghlogo-alt.jpg) no-repeat -9999px -9999px,
+	    url(img/gili-estlin-hirsch-site.jpg) no-repeat -9999px -9999px,
+	    url(img/happyocean.png) no-repeat -9999px -9999px,
+	    url(img/hero.jpg) no-repeat -9999px -9999px,
+	    url(img/hoofbeat-thumb.jpg) no-repeat -9999px -9999px,
+	    url(img/illustration-thumb.jpg) no-repeat -9999px -9999px,
+	    url(img/notanarwhal-thumb.jpg) no-repeat -9999px -9999px,
+	    url(img/purrsona.jpg) no-repeat -9999px -9999px,
+	    url(img/thread.jpg) no-repeat -9999px -9999px,
+	    url(img/tlv-01.jpg) no-repeat -9999px -9999px,
+	    url(img/tlv-02.jpg) no-repeat -9999px -9999px,
+	    url(img/tlv-03.jpg) no-repeat -9999px -9999px,
+	    url(img/tlv-04.jpg) no-repeat -9999px -9999px,
+	    url(img/tlv-05.jpg) no-repeat -9999px -9999px,
+	    url(img/tlv-06.jpg) no-repeat -9999px -9999px,
+	    url(img/tlv-07.jpg) no-repeat -9999px -9999px,
+	    url(img/tlv-08.jpg) no-repeat -9999px -9999px,
+	    url(img/tlv-09.jpg) no-repeat -9999px -9999px,
+	    url(img/tlv-10.jpg) no-repeat -9999px -9999px,
+	    url(img/tlv-11.jpg) no-repeat -9999px -9999px,
+	    url(img/tlv-12.jpg) no-repeat -9999px -9999px,
+	    url(img/tlv-13.jpg) no-repeat -9999px -9999px,
+	    url(img/tlv-14.jpg) no-repeat -9999px -9999px,
+	    url(img/tlv-15.jpg) no-repeat -9999px -9999px,
+	    url(img/tlv-16.jpg) no-repeat -9999px -9999px,
+	    url(img/tlv-thumb.jpg) no-repeat -9999px -9999px,
+	    url(img/typography-examples.png) no-repeat -9999px -9999px,
+	    url(img/typography-thumb.png) no-repeat -9999px -9999px,
+	    url(img/wireframe.jpg) no-repeat -9999px -9999px;
+}
+
+/* Preloader Page */
+#preloader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	min-height: 480px;
+	z-index: 9999;
+	background-color: #FFF;
+	background-image: url("img/preload-bg.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100%;
+}
+
+.loading-wrapper {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;	
+	z-index: 99999;
+}
+
+.loading-wrapper img {
+	max-width: 100%;
+}
