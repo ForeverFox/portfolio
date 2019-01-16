@@ -36,7 +36,11 @@ $(document).ready(function() {
 		}
 	}); */
 
-	$("#fox").addClass("animated slideInUp");
+	// $("#foreverfox").delay(700).fadeIn("slow");
+
+	$(".main-page").addClass("animated slideInUp");
+
+	$("#fox").addClass("animated slideInRight");
 
 	$("#chameleon").addClass("animated slideInLeft");
 
