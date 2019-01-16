@@ -1,5 +1,5 @@
 $(document).ready(function() {
-
+// Preloader
 	$(function() {	
 
 		$("#preload-images").waitForImages({
@@ -15,7 +15,10 @@ $(document).ready(function() {
 		});	
 	});
 
-	$('.popup-gallery').magnificPopup({
+// Fade-in screens
+	$("body, html").fadeIn("fast");
+
+	/* $('.popup-gallery').magnificPopup({
 		delegate: 'a',
 		type: 'image',
 		tLoading: 'Loading image #%curr%...',
@@ -31,9 +34,9 @@ $(document).ready(function() {
 				return item.el.find('img').attr('title');
 			}
 		}
-	});
+	}); */
 
-	//$("#fox").addClass("animated slideInUp");
+	$("#fox").addClass("animated slideInUp");
 
 	$("#chameleon").addClass("animated slideInLeft");
 
