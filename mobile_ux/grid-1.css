@@ -1,0 +1,262 @@
+@import 'https://fonts.googleapis.com/css?family=Josefin+Sans|Raleway|Open+Sans';
+
+* {
+    box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
+	body {
+	font-size: 0.95em;
+	}
+
+	h1 {
+		font-size: 2.827em;
+	}
+				
+	h2 {
+		font-size: 1.999em;	
+	}
+
+	h3, h4 {
+		font-size: 1.414em;
+	}
+
+	h5 {
+		font-size: 0.707em;
+	}	
+
+
+	.content {
+		width: 100%;
+		margin: 0 auto;
+		position: relative;
+	}
+
+
+}
+
+
+@media only screen and (max-width: 600px), only screen and (max-device-width: 600px) {
+	body{
+		font-size: 0.95em;
+	}
+
+	h1 {
+		font-size: 4.096em;
+	}
+				
+	h2 {
+		font-size: 2.0em;	
+	}
+
+
+
+	h3, h4 {
+		font-size: 1.6em;
+	}
+
+	h5 {
+		font-size: 0.707em;
+	}	
+
+	.text {
+		font-size: 4.0em;
+	}
+		
+		
+	header {
+		-webkit-column-count: 2;
+		-moz-column-count: 2;
+		column-count: 2;
+		-webkit-column-width: 200px;
+		-moz-column-width: 200px;
+		column-width: 200px;
+		-webkit-column-gap: 0;
+		-moz-column-gap: 0;
+		column-gap: 0;
+		text-align: left;
+		padding: 50px 100px 100px 50px;
+		background-color: #99cccc;
+		background-image: url(images/blueprints.png);
+		color: black;
+		width: 100%;
+	} 
+
+	img {
+		padding: 10px;
+		margin: auto;
+		max-width: 100%;
+		display: block;
+	}
+
+	.content {
+		width: 50%;
+		margin: 0 auto;
+		position: relative;
+	}
+		
+	
+}
+
+/* @media only screen and (max-width: 1200px), only screen and (max-device-width: 1200px) {
+	body{
+		font-size: 0.95em;
+	}
+
+	h1 {
+		font-size: 4.6em;
+	}
+				
+	h2 {
+		font-size: 2.4em;	
+	}
+
+
+
+	h3, h4 {
+		font-size: 1.8em;
+	}
+
+	h5 {
+		font-size: 1.1em;
+	}	
+
+	.text {
+		font-size: 5.0em;
+	}
+		
+		
+	header {
+		-webkit-column-count: 2;
+		-moz-column-count: 2;
+		column-count: 2;
+		-webkit-column-width: 300px;
+		-moz-column-width: 300px;
+		column-width: 300px;
+		-webkit-column-gap: 0;
+		-moz-column-gap: 0;
+		column-gap: 0;
+		text-align: left;
+		padding: 50px 100px 100px 50px;
+		background-color: #99cccc;
+		background-image: url(images/blueprints.png);
+		color: black;
+		width: 100%;
+	} 
+
+	img {
+		padding: 10px;
+		margin: auto;
+		max-width: 100%;
+		display: block;
+	}
+
+	.content {
+		width: 60%;
+		margin: 0 auto;
+		position: relative;
+	}
+		
+	
+}
+*/
+@media only screen and (max-width: 1680px), only screen and (max-device-width: 1680px) {
+	body {
+	font-size: 1.0em;
+	}
+				
+	h1 {
+		font-size: 5.063em;
+	}
+
+
+	h2 {
+		font-size: 2.85em;
+	}
+				
+	h3 {
+		font-size: 2.25em;
+	}
+				
+	h4 {
+		font-size: 1.5em;
+	}
+
+	h5 {
+		font-size: 0.707em;
+	}
+				
+	p {
+		line-height: 1.6;
+		letter-spacing: 0.02em;
+	}
+		
+	.text {
+		font-size: 4.0em;
+	}
+		
+	blockquote {
+		font-size: 1.2em;
+		line-height: 1.4;	
+	}
+		
+	section {
+		text-align: left;
+		display: block;
+	}
+
+	section.white {
+		padding: 30px 30px 30px 30px;
+		background-color: white;
+		color: black;
+	}
+		
+	section.intro {
+		padding: 30px 30px 30px 30px;
+		background-color: white;
+		color: black;
+	}
+		
+	section.blue {
+		padding: 30px 30px 0px 30px;
+		background-color: #99cccc;
+		color: black;	
+	}
+		
+	section.gray {
+		padding: 30px 30px 10px 30px;
+		background-color: #333333;
+		color: white;
+	}
+		
+	section.ltgray {
+		padding: 30px 30px 30px 30px;
+		background-color: #ebebeb;
+		color: black;
+	}
+		
+	header {
+		text-align: left;
+		padding: 30px 30px 2px 30px;
+		background-color: #99cccc;
+		color: black;
+		display: block;
+	} 
+
+	img {
+		padding: 10px;
+		margin: auto;
+		max-width: 100%;
+		display: block;
+	}
+
+	.content {
+		width: 100%;
+		margin: 0 auto;
+		position: relative;
+	}
+		
+	
+} 

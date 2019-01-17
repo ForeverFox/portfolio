@@ -1,0 +1,149 @@
+@import 'https://fonts.googleapis.com/css?family=Josefin+Sans|Raleway|Open+Sans';
+
+* {
+    box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+@media only screen and (min-width: 200px) {
+	body {
+	font-size: 1.2em;
+	}
+	
+	h1 {
+		font-size: 3.05em;
+	}
+	
+	h2, h3 {
+		font-size: 1.95em;
+	}
+	
+	h4 {
+		font-size: 1.41em;
+	}
+	.content {
+		width: 100%;
+		margin: 0 auto;
+		position: relative;
+	}
+	
+	.text {
+	font-size: 4.77em;
+	}
+}
+
+
+@media only screen and (min-width: 600px) {
+	body {
+	font-size: 1.1em;
+	}
+
+	h1 {
+		font-size: 3.82em;
+	}
+	
+	h2, h3 {
+		font-size: 2.44em;
+	}
+	
+	h4{
+		font-size: 1.5em;
+	}
+	
+	.content {
+		width: 75%;
+		margin: 0 auto;
+		position: relative;
+	}
+	
+	.text {
+	font-size: 5.96em;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	body {
+	font-size: 1.0em;
+	}
+	
+	.text {
+	font-size: 7.45em;
+	}
+	
+	.content {
+		width: 60%;
+		margin: 0 auto;
+		position: relative;
+	}
+} 
+
+@media only screen and (min-width: 1600px) {
+	body {
+		font-size: 1.0em;
+	}
+				
+	h1 {
+		font-size: 6.74em;
+		line-height: 0.8;
+	}
+		
+	h2, h3 {
+		font-weight: 400;
+		line-height: 1.0;
+		
+	}	
+
+	h2 {
+		font-size: 3.05em;
+	}
+				
+	h3 {
+		font-family: 'Open Sans', sans-serif;
+		font-size: 3.05em;
+		font-variant: small-caps;
+	}
+				
+	h4 {
+		font-family: 'Josefin Sans', sans-serif;
+		font-weight: 300;
+		font-size: 1.95em;
+	}
+
+	h5 {
+		font-family: 'Raleway', sans-serif;
+		font-size: 0.89em;
+		text-align: center;
+	}
+				
+	p {
+		font-family: 'Raleway', sans-serif;
+		line-height: 1.95;
+		letter-spacing: 0.02em;
+	}
+				
+	.text {
+		font-size: 9.31em;
+	}
+				
+	blockquote {
+		font-size: 1.6em;
+		line-height: 1.4;
+	}
+					
+	.content {
+		width: 50%;
+		margin: 0 auto;
+		position: relative;
+	}
+	header {
+	-webkit-column-count: 2;
+	-moz-column-count: 2;
+    column-count: 2;
+	background-color: #99cccc;
+	background-image: url(images/blueprint.jpg);
+	color: black;
+	width: 100%;
+	padding-bottom: 2%;
+	}
+} 

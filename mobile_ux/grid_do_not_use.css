@@ -1,0 +1,166 @@
+@import 'https://fonts.googleapis.com/css?family=Josefin+Sans|Roboto|Open+Sans';
+
+* {
+    box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+/* Mobile devices */
+
+@media (min-width: 120px) and (max-width: 1024px){
+	
+	
+body {
+	font-size: 0.95em;
+}
+
+h1, h2 {
+	font-family: 'Josefin Sans', sans-serif;
+}
+	
+h1 {
+	font-weight: 500;
+	color: white;
+	font-size: 4.096em;
+	text-align: left;
+}
+			
+h2 {
+	font-size: 2.0em;
+	text-align: left;	
+}
+
+h2, h3 {
+	font-weight: 400;
+	line-height: 1.0;	
+}	
+
+h3, h4 {
+	font-size: 1.6em;
+}
+
+h3 {
+	font-family: 'Open Sans', sans-serif;
+	font-variant: small-caps;	
+}
+	
+h4 {
+	font-family: 'Josefin Sans', sans-serif;
+	font-style: italic;
+	font-weight: 300;
+}
+	
+h5 {
+	font-family: 'Raleway', sans-serif;
+	font-size: 0.707em;
+	color: #99cccc;
+	text-align: center;
+}
+	
+p {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.0em;
+	line-height: 1.4;
+	letter-spacing: 0.03em;
+}
+	
+.text {
+	font-family: 'Raleway', sans-serif;
+	font-size: 4.0em;
+	font-variant: small-caps;
+	text-align: right;
+	color: rgba(0, 0, 0, 0.5);
+	opacity: 0.2;
+	display: block;
+}
+	
+blockquote {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 1.2em;
+	line-height: 1.4;	
+}
+	
+a:link {
+	color: #99cccc;
+}
+
+a:visited {
+	color: black;
+}
+
+a:hover {
+	color: hotpink;
+}
+
+a:active {
+	color: gray;
+}
+
+section {
+	text-align: left;
+	display: block;
+}
+
+section.white {
+	padding: 30px 30px 30px 30px;
+	background-color: white;
+	color: black;
+}
+	
+section.intro {
+	padding: 30px 30px 30px 30px;
+	background-color: white;
+	color: black;
+}
+	
+section.blue {
+	padding: 30px 30px 0px 30px;
+	background-color: #99cccc;
+	color: black;	
+}
+	
+section.gray {
+	padding: 30px 30px 10px 30px;
+	background-color: #333333;
+	color: white;
+}
+	
+section.ltgray {
+	padding: 30px 30px 30px 30px;
+	background-color: #ebebeb;
+	color: black;
+}
+	
+header {
+	text-align: left;
+	padding: 30px 30px 2px 30px;
+	background-color: #99cccc;
+	color: black;
+	display: block;
+} 
+
+img {
+	padding: 10px;
+	margin: auto;
+	max-width: 100%;
+	display: block;
+}
+
+figure { 
+  display: block; 
+  position: relative; 
+  overflow: hidden; 
+}
+
+figcaption {
+	display: block;
+}
+
+.content {
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+
+}

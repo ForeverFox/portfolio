@@ -67,6 +67,19 @@ figcaption p {
   list-style-type: square;
 }
 
+.list {
+  list-style-type: none;
+}
+
+#examples p {
+  padding: 0.5rem 0;
+  margin: 0;
+}
+
+#examples {
+  padding: 1rem 0;
+}
+
 /* #foreverfox {
   display: none;
 } */
@@ -507,8 +520,12 @@ figcaption p {
 }
 
 @media screen and (max-width: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
 }
 
 @media screen and (min-width: 768px) {

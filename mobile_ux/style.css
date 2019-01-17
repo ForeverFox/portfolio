@@ -1,0 +1,173 @@
+@import 'https://fonts.googleapis.com/css?family=Josefin+Sans|Raleway|Open+Sans';
+
+@font-face {
+	font-family: "PWScratchedfont";
+	src: url("fonts/PWScratchedfont.woff"), url("fonts/PWScratchedfont.ttf");
+}
+
+* {
+    box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+	
+body {
+	font-size: 1.2em;
+	margin: 0 auto;
+	padding: 0;
+	background-color: #cccccc;
+	background-image: url(images/blueprints.png);
+}
+			
+h1 {
+	font-family: 'PWScratchedfont', sans-serif;
+	color: white;
+	font-size: 6.74em;
+	font-weight: normal;
+	line-height: 0.8;
+}
+	
+h2, h3 {
+	font-weight: 400;
+	line-height: 1.0;
+	
+}	
+
+h2 {
+	font-family: 'Josefin Sans', sans-serif;
+	margin: 0 0 10px 0;
+	font-size: 3.82em;
+	color: white;
+}
+			
+h3 {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 3.05em;
+	font-variant: small-caps;
+	color: #145495;
+}
+			
+h4 {
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 300;
+	font-size: 1.95em;
+	color: white;
+}
+
+h5 {
+	font-family: 'Raleway', sans-serif;
+	font-size: 0.89em;
+	color: #84a4c4;
+	text-align: center;
+}
+			
+p {
+	font-family: 'Raleway', sans-serif;
+	line-height: 1.6;
+	letter-spacing: 0.02em;
+}
+			
+.text {
+	font-family: 'Raleway', sans-serif;
+	font-weight: lighter;
+	font-size: 7.45em;
+	text-align: right;
+	font-variant: small-caps;
+	color: #99cccc;
+	opacity: 0.2;
+	border-bottom: 1px dotted #006666;
+}
+			
+blockquote {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 1.6em;
+	line-height: 1.4;
+}
+			
+a:link {
+	color: #479df4;
+	text-decoration: none;
+}
+
+a:visited {
+	color: 51bc2c;
+}
+
+a:hover {
+	color: hotpink;
+}
+
+a:active {
+	color: gray;
+}
+
+a.internal {
+	color: white;
+	text-decoration: none;
+}
+
+.content {
+	padding: 2% 6% 2% 6%;
+	margin-top: 5%;
+	margin: 0 auto;
+	position: relative;
+	width: 50%;
+}
+
+main {
+	display: block;
+	width: 100%;
+	position: relative;
+	margin: 0 auto;
+	background-color: white;
+}
+		
+header {
+	-webkit-column-count: 2;
+	-moz-column-count: 2;
+    column-count: 2;
+	-webkit-column-width: 400px;
+    -moz-column-width: 400px;
+	column-width: 400px;
+	text-align: left;
+	padding: 2% 8% 2% 8%;
+	background-color: #99cccc;
+	background-image: url(images/blueprint.jpg);
+	color: black;
+	width: 100%;
+	padding-bottom: 2%;
+}
+
+footer {
+	padding: 1% 10% 1% 10%;
+	background-color: #333333;
+	color: white;
+	width: 100%;
+	text-align: center;
+}
+
+img {
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
+	padding: 1% 2.5% 1% 2.5%;
+}
+
+.header-image {
+	padding: 0px 0px 10px 0px;
+	display: block;
+}
+
+
+li {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 0.95em;
+	line-height: 1.8;
+	
+}
+
+ul {
+	list-style-position: inside;
+	padding: 2.85em;
+	max-width: 50em;
+}
