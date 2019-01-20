@@ -226,7 +226,7 @@ figcaption p {
 
 @media screen and (min-width: 768px) {
   .mobile-header img {
-    width: 100px;
+    width: 90px;
   }
 }
 
@@ -358,7 +358,7 @@ figcaption p {
   color: #877d78;
 }
 
-.social-media li a:hover , .project-content a:hover, #projectsNav a:hover, .about-content a:hover {
+.social-media li a:hover , .project-content a:hover, .project-gallery a:hover #projectsNav a:hover, .about-content a:hover {
   color: #6cd8df;
 }
 
@@ -403,21 +403,27 @@ figcaption p {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .project-preview {
+    width: 580px;
+  }
+}
+
 @media screen and (min-width: 1366px) {
   .project-preview {
     width: 640px;
   }
 }
 
-@media screen and (min-width: 1680px) {
+@media screen and (min-width: 1440px) {
   .project-preview {
-    width: 800px;
+    width: 960px;
   }
 }
 
 @media screen and (min-width: 1920px) {
   .project-preview {
-    width: 1000px;
+    width: 1200px;
   }
 }
 
@@ -493,7 +499,7 @@ figcaption p {
   position: relative;
 } 
 
-@media screen and (min-width: 768px) {
+@media screen and (min-height: 800px) and (min-width: 1024px) {
   #projectsNav {
     position: fixed;
     z-index: 9999;
@@ -557,7 +563,7 @@ figcaption p {
   display: block;
   width: 100%;
   margin: 0 auto;
-  padding-top: 50px;
+  padding-top: 100px;
 }
 
 @media screen and (min-width: 768px) {
@@ -578,7 +584,7 @@ figcaption p {
   max-width: 100%;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (min-height: 800px) {
   #chameleon {
     display: block;
     position: fixed;
@@ -621,12 +627,12 @@ figcaption p {
     width: 480px;
     position: fixed;
     top: 60%;
-    left: -10%;
-    transform: translate(10%, -60%);
+    left: -15%;
+    transform: translate(15%, -60%);
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .project-section, .main-page, .about-page {
     display: flex;
     flex-wrap: wrap;
@@ -635,12 +641,12 @@ figcaption p {
   }
 }
 
-.about-content p, .project-content p {
+.about-content p, .project-content p, .project-gallery p {
   width: 100%;
 }
 
 @media screen and (min-width: 768px) {
-  .about-content p, .project-content p {
+  .about-content p, .project-content p, .project-gallery p {
     width: 100%;
     padding: 1rem 0;
   }
@@ -652,7 +658,7 @@ figcaption p {
   }
 }
 
-.project-content, .about-content {
+.project-content, .about-content, .project-gallery {
   position: relative;
   width: 100%;
   margin: 0; 
@@ -666,38 +672,90 @@ figcaption p {
 }
 
 @media screen and (min-width: 768px) {
+  .project-gallery {
+    padding: 0 50px;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .about-content {
     padding-left: 50px;
   }
 }
 
-.project-content h2, .project-content p, .about-content h2, .about-content p {
+.project-content h2, .project-content p, .about-content h2, .about-content p, .project-gallery h2, .project-gallery p {
   text-align: left;
 }
 
-.project-content a, .about-content a, .project-detail a, .totop a {
+.project-content a, .project-gallery a, .about-content a, .project-detail a, .totop a {
   color: #71df6c;
 }
 
-.project-content li a {
+.project-content li a, .project-gallery li a {
   color: black;
 }
 
-.project-content a:hover, .project-detail a:hover, .totop a:hover {
+.project-content a:hover, .project-gallery a:hover, .project-detail a:hover, .totop a:hover {
   color: #6cd8df;
 }
 
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .project-content {
     width: 40%;
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1300px) {
   .project-content {
-    width: 25%;
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 1680px) {
+  .project-content {
+    width: 35%;
   }  
+}
+
+@media screen and (min-width: 768px) {
+  .project-gallery {
+    width: 40%;
+  }
+}
+
+
+@media screen and (min-width: 1024px) {
+  .project-gallery {
+    width: 35%;
+  }  
+}
+
+.spacer {
+  position: relative;
+  width: 40%;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .spacer {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) and (min-height: 800px) {
+  .spacer {
+    display: block;
+    width: 10%;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .spacer {
+    width: 5%;
+  }
 }
 
 .section-title {
@@ -706,6 +764,7 @@ figcaption p {
   font-weight: 300;
   line-height: 1.1;  
   color: black;
+  margin-top: 0;
 }
 
 .project-type {
@@ -764,6 +823,33 @@ figcaption p {
   }
 }
 
+.projects-wrapper {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .projects-wrapper {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .projects-wrapper {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
 .gallery-wrapper, .about-wrapper {
   position: relative;
   margin: 0 auto;
@@ -776,9 +862,9 @@ figcaption p {
   padding: 1rem;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px){
   .gallery-wrapper {
-    width: 50%;
+    width: 60%;
     padding: 0;
     margin: 0;
   }
