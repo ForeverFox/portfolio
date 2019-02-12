@@ -673,7 +673,7 @@ figcaption p {
 
 @media screen and (min-width: 768px) {
   .project-gallery {
-    padding: 0 50px;
+    padding-left: 50px;
   }
 }
 
@@ -727,7 +727,7 @@ figcaption p {
 
 @media screen and (min-width: 1024px) {
   .project-gallery {
-    width: 35%;
+    width: 10%;
   }  
 }
 
@@ -880,12 +880,10 @@ figcaption p {
   position: relative;
   width: 300px;
   height: 300px;
+  display: block;
+  cursor: pointer;
   margin: 0.5rem;
   box-shadow: 1px 1px 6px 1px #dcdcdc; 
-}
-
-.gallery-items {
-  display: block;
 }
 
 .gallery-items img {
